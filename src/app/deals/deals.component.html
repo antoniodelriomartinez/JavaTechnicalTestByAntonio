@@ -1,0 +1,21 @@
+<div>
+  <h1>Deals</h1>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#ID</th>
+        <th scope="col">Pelils</th>
+        <th scope="col">Zones</th>
+        <th scope="col">limit&Retains</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let deal of deals">
+        <th scope="row">{{deal.id}}</th>
+        <td><a *ngFor="let peril of deal.perils">{{peril.name}} </a></td>
+        <td><a *ngFor="let zone of deal.zones">{{zone.name}} </a></td>
+        <td>{{deal.limitRetains}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

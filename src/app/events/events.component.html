@@ -1,0 +1,25 @@
+<div>
+  <h1>Events</h1>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#ID</th>
+        <th scope="col">Id Pelil</th>
+        <th scope="col">Name Peril</th>
+        <th scope="col">Id Zone</th>
+        <th scope="col">Name Zone</th>
+        <th scope="col">Loss</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let event of events">
+        <th scope="row">{{event.id}}</th>
+        <td>{{event.idPeril}}</td>
+        <td>{{event.namePeril}}</td>
+        <td>{{event.idZone}}</td>
+        <td>{{event.nameZone}}</td>
+        <td>{{event.loss}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

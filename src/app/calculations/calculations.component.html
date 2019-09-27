@@ -1,0 +1,27 @@
+<div>
+  <h1>Calculations</h1>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#Event ID</th>
+        <th scope="col">#Deal ID</th>
+        <th scope="col">Loss event</th>
+        <th scope="col">Loss client</th>
+        <th scope="col">Loss Reinsurance</th>
+        <th scope="col">loss No Covers</th>
+        <th scope="col">limit&Retains</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let calc of calculations; let i = index">
+        <th>{{calc.eventId}}</th>
+        <th>{{calc.dealId}}</th>
+        <td>{{calc.lossEvent}}</td>
+        <td>{{calc.clientLoss}}</td>
+        <td>{{calc.reinsuranceLoss}}</td>
+        <td>{{calc.lossNoCovers}}</td>
+        <td>{{calc.limitRetains}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
